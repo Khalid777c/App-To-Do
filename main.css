@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", serif,arial;
+}
+
+.alert{
+    background-color: #e91e63;
+    padding: 1px;
+    margin: 10px auto;
+    text-align: center;
+    color: #fff;
+    width: 150px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    transition:  .8s;
+}
+
+.up{
+    top: -38px;
+}
+
+.todo-container{
+    width: 600px;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.todo-container .add-task{
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+}
+
+.todo-container .add-task input{
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, .3);
+    width: calc(100% - 15px);
+    color: #fff;
+    font-size: 20px;
+}
+
+.todo-container .add-task input:focus{
+    outline: 1px solid #17635b;
+}
+
+
+.todo-container .add-task .plus{
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    background-color: #fff;
+    right: 12px;
+    border-radius: 50%;
+    line-height: 43px;
+    text-align: center;
+    color: #009688;
+    cursor: pointer;
+    font-size: 35px;
+    transition: transform .3s;
+}
+
+.todo-container .add-task .plus:hover{
+    transform: rotate(90deg);
+}
+
+hr{
+    border: none;
+    border-bottom: 1px solid #014b43;
+}
+
+.todo-container .task-content{
+    padding: 15px;
+    background-color: #009688;
+}
+
+.todo-container .task-content .no-tasks-massge{
+    color: #fff;
+    font-size: 15px;
+}
+
+.todo-container .task-content > span{
+    display: block;
+    background-color: rgba(255, 255, 255, .3);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.todo-container .task-content > span:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.todo-container .task-content .task-box .delete{
+    float: right;
+    background-color: #e91e63;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-container .task-content .task-box.finished{
+    text-decoration: line-through;
+}
+
+.task-stats{
+    overflow: hidden;
+    margin: auto;
+    width: 600px;
+    background-color: #009688;
+    font-size: 12px;
+}
+
+.task-stats .task-count{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    background-color: rgb(21 181 166 / 76%);
+    margin: 10px 0;
+}
+
+.task-stats .task-complated{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;
+    background-color: rgb(21 181 166 / 76%);
+    margin: 10px 0;
+}
+
+.task-stats .task-count span,
+.task-stats .task-complated span{
+    color: #fff;
+    padding: 1px 5px;
+    font-size: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.task-stats .task-count span{
+    background-color: #e91e63;
+}
+
+.task-stats .task-complated span{
+    background-color: #03a9f4;
+}
